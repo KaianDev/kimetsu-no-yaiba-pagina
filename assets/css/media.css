@@ -77,8 +77,10 @@
         background-color: #2c2b2b16;
         border: 0px 1px solid #fff;
         backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
         position: fixed;
         top: 74px;
+        height:100vh;
         left: 0;
         width: 100%;
         box-shadow: 0px 4px 10px #00000048;
@@ -88,6 +90,9 @@
         z-index: 5;
         gap: 10px;
         display: none;
+    }
+    .overFlow{
+        overflow-y: hidden;
     }
     .darkBtnMode {
         top: 80px;
