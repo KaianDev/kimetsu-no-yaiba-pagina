@@ -1,0 +1,115 @@
+@media(max-width:1300px){
+    section .info {
+        max-width: 90%;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:990px){
+    section .btnTrailer {
+        max-width: 50%;
+    }
+    section .info {
+        max-width: 90%;
+        font-size: 1.3rem;
+    }
+    .modalBody {
+        height: 500px;
+    }
+}
+@media(max-width:768px){
+    section .info {
+        max-width: 90%;
+        font-size: 1.3rem;
+    }
+    aside .chars {
+        max-width: 350px;
+    }
+    section .btnTrailer {
+        max-width: 50%;
+    }
+}
+
+@media(max-width:700px){
+    #home {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #home section {
+        align-items: center;
+    }
+    #home section > img {
+        max-width: 150px;
+    }
+    #home .info {
+        text-align: center;
+        max-width: 100%;
+    }
+    img.chars {
+        max-width: 300px;
+    }
+    #modalCharBody {
+        flex-direction: column;
+    }
+    #modalCharBody .img {
+        display: flex;
+        justify-content: center;
+    }
+    #modalCharBody .img img {
+        flex: 1;
+    }
+}
+
+@media (max-width:450px){
+    img.chars {
+        max-width: 250px;
+    }
+    .banner img {
+        max-width: 300px;
+        filter: grayscale(0);
+    }
+
+    .banner h2 {
+        font-size: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        background-color: #2c2b2b16;
+        border: 0px 1px solid #fff;
+        backdrop-filter: blur(15px);
+        position: fixed;
+        top: 74px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 10px #00000048;
+        transition: all 0.3s ease;
+        align-items: center;
+        padding: 10px;
+        z-index: 5;
+        gap: 10px;
+        display: none;
+    }
+    .darkBtnMode {
+        top: 80px;
+        display: none;
+    }
+    .open {
+        display: flex;
+    }
+    .menuMobile {
+        display: flex;
+    }
+    .modalHeader h2 {
+        font-size: 1rem;
+    }
+    
+    .modalBody {
+        height: 300px;
+    }
+}
+
+@media (max-width:375px){
+    .title {
+        font-size: 1.5rem;
+    }
+}

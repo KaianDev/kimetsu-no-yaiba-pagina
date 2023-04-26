@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="darkBtnMode">
+        <div><i class="fa-solid fa-sun"></i></div>
+        <i class="fa-solid fa-toggle-off fa-xl" id="btnDM"></i>
+        <div><i class="fa-solid fa-moon"></i></i></div>
+    </div>
+    <div class="scrollBtn">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo2.png" alt="Logo Demon Slayer">
+        </div>
+        <nav>
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="#characters">
+                    <li>Personagens</li>
+                </a>
+                <a href="#seasons">
+                    <li>Temporadas</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="menuMobile">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+    </header>
+    <main>
+        <div id="home">
+            <section>
+                <img src="assets/images/logo.png" alt="">
+                <div class="info">
+                    
+                    <p>Kimetsu no Yaiba, também conhecido pelo título em língua inglesa Demon Slayer é uma série japonesa de mangá shōnen escrita e ilustrada por Koyoharu Gotōge.</p>
+                </div>
+                <button class="btnTrailer">Ver Trailer</button>
+            </section>
+            <aside>
+                <img class="chars" src="assets/images/personagens.png" alt="Personagens principais de Demon Slayer">
+            </aside>
+        </div>
+        <div class="charModels">
+            <div class="charCard">
+                <img src="" alt="" class="charImg">
+                <div class="charInfo">
+                    <span>Nome:</span>
+                    <span class="charName">
+                    </span>
+                </div>
+                <div class="charBtn">Saber Mais </div>
+            </div>
+        </div>
+        <section id="characters">
+            <h1 class="title">Personagens Principais</h1>
+            <article id="charactersArea"></article>
+            <h1 class="title">Vilões</h1>
+            <article id="villainArea"></article>
+        </section>
+        <section id="seasons">
+            <h1 class="title">Temporadas já disponíveis</h1>
+            <div class="banners">
+                <div class="banner">
+                    <a href="https://www.crunchyroll.com/watch/G9DUEDM08/cruelty" target="_blank" rel="noopener noreferrer">
+                        <h2>1ª Temporada</h2>
+                        <img src="assets/images/banner1.jpg" alt="Banner 1ª Temporada">
+                    </a>
+                </div>
+                <div class="banner">
+                    <a href="https://www.crunchyroll.com/watch/GWDU8KK5G/flame-hashira-kyojuro-rengoku" target="_blank" rel="noopener noreferrer">
+                        <h2>2ª Temporada - Parte 1</h2>
+                        <img src="assets/images/banner2.jpg" alt="Banner 2ª Temporada - Parte 1">                       
+                    </a>
+                </div>
+                <div class="banner">
+                    <a href="https://www.crunchyroll.com/watch/GMKUXWN13/sound-hashira-tengen-uzui" target="_blank" rel="noopener noreferrer">
+                        <h2>2ª Temporada - Parte 2</h2>
+                        <img src="assets/images/banner3.jpg" alt="Banner 2ª Temporada - Parte 2">
+                        
+                    </a>
+                </div>
+                <div class="banner">
+                    <a href="https://www.crunchyroll.com/watch/GJWU2E1J7/someones-dream" target="_blank" rel="noopener noreferrer">
+                        <h2>3ª Temporada</h2>
+                        <img src="assets/images/banner4.jpg" alt="Banner 3ª Temporada">
+                        
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="modalChar" class="hide">
+        <div id="modalCharHeader" class="modalHeader">
+            <h2 class="name">Tanjiro</h2>
+            <button id="btnModalChar">Voltar</button>
+        </div>
+        <div id="modalCharBody">
+            <div class="img">
+                <img src="" alt="">
+            </div>
+            <div class="inf">
+                
+            </div>
+        </div>
+    </div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modalHeader">
+            <h2>Demon Slayer: Kimetsu no Yaiba Trailer 1</h2>
+            <button class="btnCloseModal">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <div class="modalBody">
+            <iframe width="1280" height="720" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <script src="assets/js/characters.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
