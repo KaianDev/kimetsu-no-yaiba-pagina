@@ -112,10 +112,10 @@ c('.menuMobile').addEventListener('click',()=>{
     c('.darkBtnMode').classList.toggle('open');
     cs('nav ul a').forEach((link)=>{
         link.addEventListener('click',()=>{
-            c('nav ul').classList.toggle('open');
-            c('.darkBtnMode').classList.toggle('open');
-            menuMobile.classList.add('fa-bars');
             menuMobile.classList.remove('fa-x');
+            menuMobile.classList.add('fa-bars');
+            c('nav ul').classList.remove('open');
+            c('.darkBtnMode').classList.remove('open');
         })
     })
 })
