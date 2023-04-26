@@ -104,18 +104,22 @@ c('.menuMobile').addEventListener('click',()=>{
     if(menuMobile.classList.contains('fa-bars')){
         menuMobile.classList.remove('fa-bars');
         menuMobile.classList.add('fa-x');
+        document.body.classList.add('overFlow');
     } else {
         menuMobile.classList.add('fa-bars');
         menuMobile.classList.remove('fa-x');
+        document.body.classList.remove('overFlow');
     }
     c('nav ul').classList.toggle('open');
     c('.darkBtnMode').classList.toggle('open');
     cs('nav ul a').forEach((link)=>{
         link.addEventListener('click',()=>{
+            document.body.classList.remove('overFlow');
             menuMobile.classList.remove('fa-x');
             menuMobile.classList.add('fa-bars');
             c('nav ul').classList.remove('open');
             c('.darkBtnMode').classList.remove('open');
+            
         })
     })
 })
